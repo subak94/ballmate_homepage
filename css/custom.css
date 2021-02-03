@@ -38,21 +38,25 @@ section {
 .section-wrap-3 { max-width: 400px !important; }
 
 .section-title {
-    font-size: 28px;
+    font-size: 35px;
     font-family: var(--dosisFont);
     text-transform: capitalize;
-    color: var(--silverColor);
+    color: var(--darkCol);
     font-weight: 700;
 }
 .section-tag {
     font-size: 16px;
     line-height: 2;
-    color: var(--silverColor);
+    color: var(--darkCol);
     font-weight: 500;
 }
-.change-white .section-title,
-.change-white .section-tag {
+.change-white .section-title {
     color: var(--darkCol);
+    position: relative;
+    z-index: 10;
+}
+.change-white .section-tag {
+    color: var(--grayColor2);
     position: relative;
     z-index: 10;
 }
@@ -65,6 +69,7 @@ section {
     letter-spacing: 1.5px;
     font-family: var(--sFont);
     padding: 15px 30px;
+    color: var(--darkCol);
 }
 
 .gray-bg {

@@ -32,7 +32,7 @@
     --scondaryCol: hsl(195, 20%, 60%);
     --primaryCol: hsl(220, 100%, 60%);
     --infoCol: hsl(187, 100%, 45%);
-    --successCol: #3bce95; /*--successCol: hsl(162, 99%, 38%);*/
+    --successCol: #FFFFFF; /*--successCol: hsl(162, 99%, 38%);*/
     --warningCol: hsl(30, 100%, 60%);
     --dangerCol: hsl(1, 100%, 62%);
     --pinkCol: hsl(-21, 100%, 60%);
