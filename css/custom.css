@@ -11,6 +11,7 @@ html, body {
 
     --card-shadow: 0 20px 47px rgba(180, 182, 196, 0.22), 0 -10px 30px rgba(180, 182, 196, 0.22);
 }
+
 [class*="-card"] {
     --card-dimen: var(--unite-70);
     --card-font-size-18: 18px;
@@ -140,7 +141,7 @@ section {
 .seed {
     display: block;
     width: 640px;
-    height: 715px;
+    height: 800px;
     position: absolute;
     margin: auto;
     top: 50%;
@@ -183,7 +184,7 @@ section {
 ************************/
 .home {
     background: url("../images/others/main-shape.svg") no-repeat center top / cover;
-    min-height: 920px;
+    max-height: 950px;
 }
 .intro {
     padding-top: var(--unite-80);

@@ -25,7 +25,7 @@
     showCancelButton: false,
     closeOnConfirm: true,
     closeOnCancel: true,
-    confirmButtonText: button.alert.confirm,
+    confirmButtonText: 'button.alert.confirm',
     confirmButtonColor: '#345ec7',
     confirmButtonClass: 'btn btn-info btn-fill btn_popup_ok', // param overwritten by Creative Tim Staff for design consistency purpose
     cancelButtonText: text.common.cancel,

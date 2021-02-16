@@ -132,6 +132,8 @@ i.right {
 .btn.btn-danger, .btn.btn-danger:focus {background-color: var(--dangerCol); }
 .btn.btn-pink, .btn.btn-pink:focus {background-color: var(--pinkCol); }
 
+.btn.btn-success:hover{color:#474747}
+
 /* Button Outline focus */
 .btn.btn-default-outline, .btn.btn-default-outline:focus {color: var(--defaultCol);border-color: var(--defaultCol); }
 .btn.btn-white-outline, .btn.btn-white-outline:focus {color: var(--grayColor);border-color: var(--whiteCol); }
