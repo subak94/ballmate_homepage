@@ -1,6 +1,8 @@
 /*************************
 // CSS Custom Variables
 *************************/
+
+
 html, body {
     --opacity-9:  .9;
     --opacity-8:  .8;
@@ -10,6 +12,8 @@ html, body {
     --gray-dark: #E4ECF4;
 
     --card-shadow: 0 20px 47px rgba(180, 182, 196, 0.22), 0 -10px 30px rgba(180, 182, 196, 0.22);
+	width: 100%;
+	height: 100%
 }
 
 [class*="-card"] {
@@ -194,7 +198,7 @@ section {
     padding-top: 100px;
 }
 .intro .intro-wrap {
-    max-width: 375px;
+    max-width: 500px;
 }
 .intro-wrap .intro-title {
     font-family: var(--dosisFont);
@@ -1446,3 +1450,5 @@ section {
         max-width: 1160px;
     }
 }
+
+
