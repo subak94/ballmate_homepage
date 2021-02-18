@@ -24,7 +24,7 @@ html, body {
     --border-radius-6: calc(var(--unite-5) + 1px);
 }
 
-* { outline-color: transparent !important }
+
 body {
     font-family: var(--sFont);
 }
@@ -1141,6 +1141,7 @@ section {
 	padding-right: 20px;
 	padding-left: 20px;
 }
+
 .dropdown-item.active,
 .dropdown-item:active,
 .dropdown-item:focus,
@@ -1148,6 +1149,7 @@ section {
 	color: var(--silverColor);
 	background-color: transparent;
 }
+
 .form-inline > .btn {
 	text-transform: uppercase;
 	font-weight: 600;
