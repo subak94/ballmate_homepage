@@ -2,7 +2,9 @@
 // CSS Custom Variables
 *************************/
 
-
+body {
+  overscroll-behavior-x: none;
+}
 html, body {
     --opacity-9:  .9;
     --opacity-8:  .8;
