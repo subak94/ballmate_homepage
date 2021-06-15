@@ -34,8 +34,8 @@
 		}		
 	}, 2000);
 
-	if(os == "ios") location.href = "ballmateapp://?page=rounding&rounding_seq="+$('#rounding_seq').val();
-	else location.href = "ballmateapp://rounding?rounding_seq="+$('#rounding_seq').val();
+	if(os == "ios") location.href = "ballmateapp://?page=rounding&rounding_seq="+document.getElementById('rounding_seq').value;
+	else location.href = "ballmateapp://rounding?rounding_seq="+document.getElementById('rounding_seq').value;
 
 
 </script>
