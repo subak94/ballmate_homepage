@@ -25,14 +25,14 @@
 	} else {
 		os = "pc";
 	}
-	/*
+	
 	setTimeout( function() {
 		if(os == "ios"){
 			location.href = "https://apps.apple.com/us/app/id1521195239";
 		}else{
 			location.href = "https://play.google.com/store/apps/details?id=kr.co.ballmate.app";
 		}		
-	}, 2000);*/
+	}, 2000);
 
 	if(os == "ios") location.href = "ballmateapp://?page=rounding&rounding_seq="+$('#rounding_seq').val();
 	else location.href = "ballmateapp://rounding?rounding_seq="+$('#rounding_seq').val();
