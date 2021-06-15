@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>볼메이트 - 골프 조인, 골프 친구를 만나는 새로운 방법.</title>
+	<script src="/js/jquery-1.8.0.min.js"></script>
+</head>
+<body >
+	<input type="hidden" class="form-control" id="rounding_seq" value="<?php echo $_GET['rounding_seq']?>">
+</body>
+<script>
+	var os;
+	var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));	 
+	if (mobile) {
+		var userAgent = navigator.userAgent.toLowerCase();
+		if (userAgent.search("android") > -1) os = "android";
+		else if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1)) os = "ios";
+		else os = "pc";
+	} else {
+		os = "pc";
+	}
+
+	setTimeout( function() {
+		if(os == "ios"){
+			location.href = "https://apps.apple.com/us/app/id1521195239";
+		}else{
+			location.href = "https://play.google.com/store/apps/details?id=kr.co.ballmate.app";
+		}		
+	}, 2000);
+
+	if(os == "ios") location.href = "ballmateapp://?page=rounding&rounding_seq="+$('#rounding_seq').val();
+	else location.href = "ballmateapp://rounding?rounding_seq="+$('#rounding_seq').val();
+
+
+</script>
