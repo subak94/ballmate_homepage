@@ -30,7 +30,6 @@
 			var varName = parameters[i].split('=')[0];
 			if (varName.toUpperCase() == paramName.toUpperCase()) {
 				returnValue = parameters[i].split('=')[1];
-				console.log(decodeURIComponent(returnValue));
 				return decodeURIComponent(returnValue);
 			}
 		}
