@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+	<link rel="shortcut icon" href="/favicon.ico">
+    <title>볼메이트 - 골프 조인, 골프 친구를 만나는 새로운 방법.</title>
+	<link href="https://admin.ballmate.co.kr/assets/monster-admin/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://admin.ballmate.co.kr/assets/monster-admin/dark/css/style.css" rel="stylesheet">
+</head> 
+<body>
+	<div class="container" style="padding : 0px;margin: 0px;"> 
+		<img id="img1"src="" style="width:100%">
+	</div>
+</body>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> 
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<!--script src="js/app.js"></script-->
+<script src="js/custom.js"></script>
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-162507050-1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script>
+function getParam(sname) {
+    var params = location.search.substr(location.search.indexOf("?") + 1);
+    var sval = "";
+    params = params.split("&");
+    for (var i = 0; i < params.length; i++) {
+        temp = params[i].split("=");
+        if ([temp[0]] == sname) { sval = temp[1]; }
+    }
+    return sval;
+}
+
+
+var data ="page_seq="+getParam('page_seq');
+$.ajax({
+	type : "post",
+	url : "https://admin.ballmate.co.kr/EventPage",
+	data : data,
+	dataType: "json",
+	success : function(json) {		
+		if(json.image) $('#img1').attr('src', json.image);
+	}
+});
+
+console.log(getParam('page_seq'))
+</script>
+
+
+</html>
