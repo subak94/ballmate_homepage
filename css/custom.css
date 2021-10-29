@@ -205,7 +205,7 @@ section {
 .intro-wrap .intro-title {
     font-family: var(--dosisFont);
     color: var(--whiteCol);
-    font-size: 70px;
+    font-size: 62px;
     font-weight: 300;
     line-height: 1.1;
 }
